@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230411121CF3012D003CE754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411111CF3012D003CE754 /* main.m */; };
+		230411151CF3012D003CE754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411141CF3012D003CE754 /* AppDelegate.m */; };
+		230411181CF3012D003CE754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411171CF3012D003CE754 /* ViewController.m */; };
+		2304111B1CF3012D003CE754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230411191CF3012D003CE754 /* Main.storyboard */; };
+		2304111D1CF3012D003CE754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2304111C1CF3012D003CE754 /* Assets.xcassets */; };
+		230411201CF3012D003CE754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2304111E1CF3012D003CE754 /* LaunchScreen.storyboard */; };
+		2304112B1CF3012D003CE754 /* HailyCloudMemeryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2304112A1CF3012D003CE754 /* HailyCloudMemeryTests.m */; };
+		230411361CF3012D003CE754 /* HailyCloudMemeryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411351CF3012D003CE754 /* HailyCloudMemeryUITests.m */; };
+		230411461CF31068003CE754 /* FileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411441CF31068003CE754 /* FileTableViewCell.m */; };
+		230411471CF31068003CE754 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 230411451CF31068003CE754 /* FileTableViewCell.xib */; };
+		2304114A1CF31AE2003CE754 /* WifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411491CF31AE2003CE754 /* WifiViewController.m */; };
+		4FCD2F6E38CC97AAF0985456 /* libPods-HailyCloudMemery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F626EB380B26A3759E07983 /* libPods-HailyCloudMemery.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		230411271CF3012D003CE754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230411051CF3012D003CE754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2304110C1CF3012D003CE754;
+			remoteInfo = HailyCloudMemery;
+		};
+		230411321CF3012D003CE754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230411051CF3012D003CE754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2304110C1CF3012D003CE754;
+			remoteInfo = HailyCloudMemery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F626EB380B26A3759E07983 /* libPods-HailyCloudMemery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HailyCloudMemery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2304110D1CF3012D003CE754 /* HailyCloudMemery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HailyCloudMemery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		230411111CF3012D003CE754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		230411131CF3012D003CE754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		230411141CF3012D003CE754 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		230411161CF3012D003CE754 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		230411171CF3012D003CE754 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2304111A1CF3012D003CE754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2304111C1CF3012D003CE754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2304111F1CF3012D003CE754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		230411211CF3012D003CE754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230411261CF3012D003CE754 /* HailyCloudMemeryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HailyCloudMemeryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2304112A1CF3012D003CE754 /* HailyCloudMemeryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HailyCloudMemeryTests.m; sourceTree = "<group>"; };
+		2304112C1CF3012D003CE754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230411311CF3012D003CE754 /* HailyCloudMemeryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HailyCloudMemeryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		230411351CF3012D003CE754 /* HailyCloudMemeryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HailyCloudMemeryUITests.m; sourceTree = "<group>"; };
+		230411371CF3012D003CE754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230411431CF31068003CE754 /* FileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTableViewCell.h; sourceTree = "<group>"; };
+		230411441CF31068003CE754 /* FileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTableViewCell.m; sourceTree = "<group>"; };
+		230411451CF31068003CE754 /* FileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
+		230411481CF31AE2003CE754 /* WifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiViewController.h; sourceTree = "<group>"; };
+		230411491CF31AE2003CE754 /* WifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiViewController.m; sourceTree = "<group>"; };
+		6C47CA1AED9F312D5681B5CC /* Pods-HailyCloudMemery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HailyCloudMemery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery.debug.xcconfig"; sourceTree = "<group>"; };
+		C6B68459A2FCBC4F7710467F /* Pods-HailyCloudMemery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HailyCloudMemery.release.xcconfig"; path = "Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2304110A1CF3012D003CE754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCD2F6E38CC97AAF0985456 /* libPods-HailyCloudMemery.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230411231CF3012D003CE754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2304112E1CF3012D003CE754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230411041CF3012D003CE754 = {
+			isa = PBXGroup;
+			children = (
+				2304110F1CF3012D003CE754 /* HailyCloudMemery */,
+				230411291CF3012D003CE754 /* HailyCloudMemeryTests */,
+				230411341CF3012D003CE754 /* HailyCloudMemeryUITests */,
+				2304110E1CF3012D003CE754 /* Products */,
+				9E09D26098DC78C4BDCB302D /* Pods */,
+				D75DB50F4CCBA49F2A4723AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2304110E1CF3012D003CE754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2304110D1CF3012D003CE754 /* HailyCloudMemery.app */,
+				230411261CF3012D003CE754 /* HailyCloudMemeryTests.xctest */,
+				230411311CF3012D003CE754 /* HailyCloudMemeryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2304110F1CF3012D003CE754 /* HailyCloudMemery */ = {
+			isa = PBXGroup;
+			children = (
+				230411131CF3012D003CE754 /* AppDelegate.h */,
+				230411141CF3012D003CE754 /* AppDelegate.m */,
+				230411161CF3012D003CE754 /* ViewController.h */,
+				230411171CF3012D003CE754 /* ViewController.m */,
+				230411191CF3012D003CE754 /* Main.storyboard */,
+				2304111C1CF3012D003CE754 /* Assets.xcassets */,
+				2304111E1CF3012D003CE754 /* LaunchScreen.storyboard */,
+				230411211CF3012D003CE754 /* Info.plist */,
+				230411101CF3012D003CE754 /* Supporting Files */,
+				230411431CF31068003CE754 /* FileTableViewCell.h */,
+				230411441CF31068003CE754 /* FileTableViewCell.m */,
+				230411451CF31068003CE754 /* FileTableViewCell.xib */,
+				230411481CF31AE2003CE754 /* WifiViewController.h */,
+				230411491CF31AE2003CE754 /* WifiViewController.m */,
+			);
+			path = HailyCloudMemery;
+			sourceTree = "<group>";
+		};
+		230411101CF3012D003CE754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				230411111CF3012D003CE754 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		230411291CF3012D003CE754 /* HailyCloudMemeryTests */ = {
+			isa = PBXGroup;
+			children = (
+				2304112A1CF3012D003CE754 /* HailyCloudMemeryTests.m */,
+				2304112C1CF3012D003CE754 /* Info.plist */,
+			);
+			path = HailyCloudMemeryTests;
+			sourceTree = "<group>";
+		};
+		230411341CF3012D003CE754 /* HailyCloudMemeryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				230411351CF3012D003CE754 /* HailyCloudMemeryUITests.m */,
+				230411371CF3012D003CE754 /* Info.plist */,
+			);
+			path = HailyCloudMemeryUITests;
+			sourceTree = "<group>";
+		};
+		9E09D26098DC78C4BDCB302D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C47CA1AED9F312D5681B5CC /* Pods-HailyCloudMemery.debug.xcconfig */,
+				C6B68459A2FCBC4F7710467F /* Pods-HailyCloudMemery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D75DB50F4CCBA49F2A4723AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F626EB380B26A3759E07983 /* libPods-HailyCloudMemery.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2304110C1CF3012D003CE754 /* HailyCloudMemery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2304113A1CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemery" */;
+			buildPhases = (
+				BEC3DA20AA4D117EFA483014 /* Check Pods Manifest.lock */,
+				230411091CF3012D003CE754 /* Sources */,
+				2304110A1CF3012D003CE754 /* Frameworks */,
+				2304110B1CF3012D003CE754 /* Resources */,
+				7BEA64007D661A1AC9DCDB2C /* Embed Pods Frameworks */,
+				CE4F748216DCEDAD56425494 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HailyCloudMemery;
+			productName = HailyCloudMemery;
+			productReference = 2304110D1CF3012D003CE754 /* HailyCloudMemery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		230411251CF3012D003CE754 /* HailyCloudMemeryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2304113D1CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemeryTests" */;
+			buildPhases = (
+				230411221CF3012D003CE754 /* Sources */,
+				230411231CF3012D003CE754 /* Frameworks */,
+				230411241CF3012D003CE754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				230411281CF3012D003CE754 /* PBXTargetDependency */,
+			);
+			name = HailyCloudMemeryTests;
+			productName = HailyCloudMemeryTests;
+			productReference = 230411261CF3012D003CE754 /* HailyCloudMemeryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		230411301CF3012D003CE754 /* HailyCloudMemeryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230411401CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemeryUITests" */;
+			buildPhases = (
+				2304112D1CF3012D003CE754 /* Sources */,
+				2304112E1CF3012D003CE754 /* Frameworks */,
+				2304112F1CF3012D003CE754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				230411331CF3012D003CE754 /* PBXTargetDependency */,
+			);
+			name = HailyCloudMemeryUITests;
+			productName = HailyCloudMemeryUITests;
+			productReference = 230411311CF3012D003CE754 /* HailyCloudMemeryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230411051CF3012D003CE754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "易海";
+				TargetAttributes = {
+					2304110C1CF3012D003CE754 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					230411251CF3012D003CE754 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2304110C1CF3012D003CE754;
+					};
+					230411301CF3012D003CE754 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2304110C1CF3012D003CE754;
+					};
+				};
+			};
+			buildConfigurationList = 230411081CF3012D003CE754 /* Build configuration list for PBXProject "HailyCloudMemery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 230411041CF3012D003CE754;
+			productRefGroup = 2304110E1CF3012D003CE754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2304110C1CF3012D003CE754 /* HailyCloudMemery */,
+				230411251CF3012D003CE754 /* HailyCloudMemeryTests */,
+				230411301CF3012D003CE754 /* HailyCloudMemeryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2304110B1CF3012D003CE754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230411201CF3012D003CE754 /* LaunchScreen.storyboard in Resources */,
+				230411471CF31068003CE754 /* FileTableViewCell.xib in Resources */,
+				2304111D1CF3012D003CE754 /* Assets.xcassets in Resources */,
+				2304111B1CF3012D003CE754 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230411241CF3012D003CE754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2304112F1CF3012D003CE754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BEA64007D661A1AC9DCDB2C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEC3DA20AA4D117EFA483014 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4F748216DCEDAD56425494 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230411091CF3012D003CE754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2304114A1CF31AE2003CE754 /* WifiViewController.m in Sources */,
+				230411181CF3012D003CE754 /* ViewController.m in Sources */,
+				230411461CF31068003CE754 /* FileTableViewCell.m in Sources */,
+				230411151CF3012D003CE754 /* AppDelegate.m in Sources */,
+				230411121CF3012D003CE754 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230411221CF3012D003CE754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2304112B1CF3012D003CE754 /* HailyCloudMemeryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2304112D1CF3012D003CE754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230411361CF3012D003CE754 /* HailyCloudMemeryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		230411281CF3012D003CE754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2304110C1CF3012D003CE754 /* HailyCloudMemery */;
+			targetProxy = 230411271CF3012D003CE754 /* PBXContainerItemProxy */;
+		};
+		230411331CF3012D003CE754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2304110C1CF3012D003CE754 /* HailyCloudMemery */;
+			targetProxy = 230411321CF3012D003CE754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		230411191CF3012D003CE754 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2304111A1CF3012D003CE754 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2304111E1CF3012D003CE754 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2304111F1CF3012D003CE754 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		230411381CF3012D003CE754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		230411391CF3012D003CE754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2304113B1CF3012D003CE754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C47CA1AED9F312D5681B5CC /* Pods-HailyCloudMemery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HailyCloudMemery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2304113C1CF3012D003CE754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B68459A2FCBC4F7710467F /* Pods-HailyCloudMemery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HailyCloudMemery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2304113E1CF3012D003CE754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HailyCloudMemeryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemeryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HailyCloudMemery.app/HailyCloudMemery";
+			};
+			name = Debug;
+		};
+		2304113F1CF3012D003CE754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HailyCloudMemeryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemeryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HailyCloudMemery.app/HailyCloudMemery";
+			};
+			name = Release;
+		};
+		230411411CF3012D003CE754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HailyCloudMemeryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemeryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HailyCloudMemery;
+			};
+			name = Debug;
+		};
+		230411421CF3012D003CE754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HailyCloudMemeryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemeryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HailyCloudMemery;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230411081CF3012D003CE754 /* Build configuration list for PBXProject "HailyCloudMemery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230411381CF3012D003CE754 /* Debug */,
+				230411391CF3012D003CE754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2304113A1CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2304113B1CF3012D003CE754 /* Debug */,
+				2304113C1CF3012D003CE754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2304113D1CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemeryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2304113E1CF3012D003CE754 /* Debug */,
+				2304113F1CF3012D003CE754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230411401CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemeryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230411411CF3012D003CE754 /* Debug */,
+				230411421CF3012D003CE754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 230411051CF3012D003CE754 /* Project object */;
+}
