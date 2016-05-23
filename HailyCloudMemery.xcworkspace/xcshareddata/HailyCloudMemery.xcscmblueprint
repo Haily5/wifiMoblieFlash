@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5532E392AE6D238BB60DA60BCD05E0B872559626",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A5A13E1A67344BD6FC00D8AA51235DBE6E41897C" : 0,
+    "5532E392AE6D238BB60DA60BCD05E0B872559626" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4B04937A-7CD5-4B6F-B25C-E7CF95F20ABB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A5A13E1A67344BD6FC00D8AA51235DBE6E41897C" : "",
+    "5532E392AE6D238BB60DA60BCD05E0B872559626" : "HailyCloudMemery\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HailyCloudMemery",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HailyCloudMemery.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Haily5\/wifiMoblieFlash.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5532E392AE6D238BB60DA60BCD05E0B872559626"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Haily5\/HLExtensions.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5A13E1A67344BD6FC00D8AA51235DBE6E41897C"
+    }
+  ]
+}

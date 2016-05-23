@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define documentsPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+#define diskPath [documentsPath stringByAppendingString:@"/disk"]
+
 @interface WifiViewController : UIViewController
-@property (nonatomic, copy) NSString *filePath;
+@property (nonatomic, copy) void (^back)();
 @end

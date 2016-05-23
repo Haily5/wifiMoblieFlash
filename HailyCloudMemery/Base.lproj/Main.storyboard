@@ -33,8 +33,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVR-uj-N26">
-                                <rect key="frame" x="279" y="289.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVR-uj-N26">
+                                <rect key="frame" x="8" y="289.5" width="584" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,6 +43,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pVR-uj-N26" firstAttribute="centerY" secondItem="ZOi-0j-0fV" secondAttribute="centerY" id="Beg-rz-UhQ"/>
+                            <constraint firstAttribute="trailing" secondItem="pVR-uj-N26" secondAttribute="trailing" constant="8" id="ZBL-AL-eaR"/>
+                            <constraint firstItem="pVR-uj-N26" firstAttribute="leading" secondItem="ZOi-0j-0fV" secondAttribute="leading" constant="8" id="bN1-8T-Os5"/>
                             <constraint firstItem="pVR-uj-N26" firstAttribute="centerX" secondItem="ZOi-0j-0fV" secondAttribute="centerX" id="zIg-kS-aac"/>
                         </constraints>
                     </view>

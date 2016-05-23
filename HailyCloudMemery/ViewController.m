@@ -10,8 +10,6 @@
 #import "FileTableViewCell.h"
 #import "WifiViewController.h"
 
-#define documentsPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-#define diskPath [documentsPath stringByAppendingString:@"/disk"]
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
@@ -39,6 +37,7 @@
     [self.tableview registerNib:[UINib nibWithNibName:@"FileTableViewCell" bundle:nil] forCellReuseIdentifier:@"FileTableViewCellIdentifer"];
     self.tableView.rowHeight = 60.f;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.title = @"文件列表";
     self.navigationItem.rightBarButtonItem = [self rightItem];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -55,6 +54,10 @@
     
     WifiViewController *wifi = (WifiViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"WifiViewController"];
     [self.navigationController pushViewController:wifi animated:YES];
+    wifi.back = ^()
+    {
+        [self checkFileLists];
+    };
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,6 +83,7 @@
     [self.files removeAllObjects];
     NSFileManager *defaultManager = [NSFileManager defaultManager];
     
+    
     BOOL isDir = NO;
     if ([defaultManager fileExistsAtPath:diskPath isDirectory:&isDir])
     {
@@ -87,6 +91,10 @@
         {
             NSLog(@"谁吃饱了撑得弄这个");
             [defaultManager removeItemAtPath:diskPath error:NULL];
+            if ([defaultManager createDirectoryAtPath:diskPath withIntermediateDirectories:YES attributes:nil error:NULL])
+            {
+                NSLog(@"创建文件夹成功");
+            }
         }
     }
     else
@@ -97,23 +105,22 @@
         }
     }
     
-    NSString *basePath = documentsPath;
     
-    NSArray *list = [defaultManager contentsOfDirectoryAtPath:basePath error:NULL];
+    
+    NSArray *list = [defaultManager contentsOfDirectoryAtPath:diskPath error:NULL];
     
     for (uint i = 0; i < list.count; i ++) {
         NSString *file = list[i];
-        BOOL isDirectory = [self isDirectory:file superPath:basePath];
+        BOOL isDirectory = [self isDirectory:file superPath:diskPath];
         long long fileSize = 0;
         if (!isDirectory)
         {
-            fileSize += [[NSFileManager defaultManager] attributesOfItemAtPath:[basePath stringByAppendingPathComponent:file] error:NULL].fileSize;
+            fileSize += [[NSFileManager defaultManager] attributesOfItemAtPath:[diskPath stringByAppendingPathComponent:file] error:NULL].fileSize;
         }
         NSDictionary *fileObj = @{@"name":file, @"isDirectory":[NSNumber numberWithBool:isDirectory], @"size":[NSNumber numberWithLong:fileSize]};
         [self.files addObject:fileObj];
     }
     
-    NSLog(@"files = %@",_files);
     [self.tableView reloadData];
 }
 
@@ -140,6 +147,39 @@
     cell.fileData = self.files[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return   UITableViewCellEditingStyleDelete;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"删除";
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle ==UITableViewCellEditingStyleDelete)
+    {
+        
+        //删除对应文件
+        NSDictionary *fileObj = self.files[indexPath.row];
+        NSString *file = fileObj[@"name"];
+        NSString *filePath = [diskPath stringByAppendingPathComponent:file];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath])
+        {
+            [[NSFileManager defaultManager] removeItemAtPath:filePath error:NULL];
+            [self.files  removeObjectAtIndex:[indexPath row]];  //删除数组里的数据
+        }
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 @end
