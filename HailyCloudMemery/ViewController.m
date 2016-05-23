@@ -9,11 +9,9 @@
 #import "ViewController.h"
 #import "FileTableViewCell.h"
 #import "WifiViewController.h"
+#import "MJRefresh.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableview;
-
-
 @property (nonatomic, strong) NSMutableArray *files;
 @end
 
@@ -34,17 +32,28 @@
     [super viewDidLoad];
     
     [self checkFileLists];
-    [self.tableview registerNib:[UINib nibWithNibName:@"FileTableViewCell" bundle:nil] forCellReuseIdentifier:@"FileTableViewCellIdentifer"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FileTableViewCell" bundle:nil] forCellReuseIdentifier:@"FileTableViewCellIdentifer"];
     self.tableView.rowHeight = 60.f;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.title = @"文件列表";
     self.navigationItem.rightBarButtonItem = [self rightItem];
+    self.navigationItem.leftBarButtonItem = [self leftItem];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self checkFileLists];
+    }];
 }
 
 - (UIBarButtonItem *)rightItem
 {
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"传输" style:UIBarButtonItemStyleDone target:self action:@selector(showUploadView)];
+    return item;
+}
+
+- (UIBarButtonItem *)leftItem
+{
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"删除全部" style:UIBarButtonItemStyleDone target:self action:@selector(showRemoveAll)];
     return item;
 }
 
@@ -58,6 +67,40 @@
     {
         [self checkFileLists];
     };
+}
+
+- (void)showRemoveAll
+{
+    if (0 == self.files.count) return;
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"是否删除？" message:@"是否删除全部文件?" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *delete = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        [self removeAll];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:delete];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)removeAll
+{
+    NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:self.files.count];
+    for (uint i = 0; i < self.files.count; i ++) {
+        NSDictionary *fileObj = self.files[i];
+        NSString *file = fileObj[@"name"];
+        NSString *filePath = [diskPath stringByAppendingPathComponent:file];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        [indexPaths addObject:indexPath];
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            if ([[NSFileManager defaultManager] fileExistsAtPath:filePath])
+            {
+                [[NSFileManager defaultManager] removeItemAtPath:filePath error:NULL];
+            }
+        });
+    }
+    [self.files removeAllObjects];
+    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -120,7 +163,7 @@
         NSDictionary *fileObj = @{@"name":file, @"isDirectory":[NSNumber numberWithBool:isDirectory], @"size":[NSNumber numberWithLong:fileSize]};
         [self.files addObject:fileObj];
     }
-    
+    [self.tableView.mj_header endRefreshing];
     [self.tableView reloadData];
 }
 

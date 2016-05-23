@@ -18,7 +18,7 @@
 		230411461CF31068003CE754 /* FileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411441CF31068003CE754 /* FileTableViewCell.m */; };
 		230411471CF31068003CE754 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 230411451CF31068003CE754 /* FileTableViewCell.xib */; };
 		2304114A1CF31AE2003CE754 /* WifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230411491CF31AE2003CE754 /* WifiViewController.m */; };
-		4FCD2F6E38CC97AAF0985456 /* libPods-HailyCloudMemery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F626EB380B26A3759E07983 /* libPods-HailyCloudMemery.a */; };
+		641DA601C4A0BC598FFEB6AA /* libPods-HailyCloudMemery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2584F1817DB9960E95DE564 /* libPods-HailyCloudMemery.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F626EB380B26A3759E07983 /* libPods-HailyCloudMemery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HailyCloudMemery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2304110D1CF3012D003CE754 /* HailyCloudMemery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HailyCloudMemery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		230411111CF3012D003CE754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		230411131CF3012D003CE754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,8 +60,9 @@
 		230411451CF31068003CE754 /* FileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
 		230411481CF31AE2003CE754 /* WifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiViewController.h; sourceTree = "<group>"; };
 		230411491CF31AE2003CE754 /* WifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiViewController.m; sourceTree = "<group>"; };
-		6C47CA1AED9F312D5681B5CC /* Pods-HailyCloudMemery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HailyCloudMemery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery.debug.xcconfig"; sourceTree = "<group>"; };
-		C6B68459A2FCBC4F7710467F /* Pods-HailyCloudMemery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HailyCloudMemery.release.xcconfig"; path = "Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery.release.xcconfig"; sourceTree = "<group>"; };
+		8ED85ED86020D1D71ED99F20 /* Pods-HailyCloudMemery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HailyCloudMemery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery.debug.xcconfig"; sourceTree = "<group>"; };
+		A2584F1817DB9960E95DE564 /* libPods-HailyCloudMemery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HailyCloudMemery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EA5EED59B14086E1EE9689 /* Pods-HailyCloudMemery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HailyCloudMemery.release.xcconfig"; path = "Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCD2F6E38CC97AAF0985456 /* libPods-HailyCloudMemery.a in Frameworks */,
+				641DA601C4A0BC598FFEB6AA /* libPods-HailyCloudMemery.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0487122D67218379714C4176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2584F1817DB9960E95DE564 /* libPods-HailyCloudMemery.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		230411041CF3012D003CE754 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +106,8 @@
 				230411291CF3012D003CE754 /* HailyCloudMemeryTests */,
 				230411341CF3012D003CE754 /* HailyCloudMemeryUITests */,
 				2304110E1CF3012D003CE754 /* Products */,
-				9E09D26098DC78C4BDCB302D /* Pods */,
-				D75DB50F4CCBA49F2A4723AC /* Frameworks */,
+				B29957CA08AC6A325A8C6201 /* Pods */,
+				0487122D67218379714C4176 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,21 +168,13 @@
 			path = HailyCloudMemeryUITests;
 			sourceTree = "<group>";
 		};
-		9E09D26098DC78C4BDCB302D /* Pods */ = {
+		B29957CA08AC6A325A8C6201 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C47CA1AED9F312D5681B5CC /* Pods-HailyCloudMemery.debug.xcconfig */,
-				C6B68459A2FCBC4F7710467F /* Pods-HailyCloudMemery.release.xcconfig */,
+				8ED85ED86020D1D71ED99F20 /* Pods-HailyCloudMemery.debug.xcconfig */,
+				F4EA5EED59B14086E1EE9689 /* Pods-HailyCloudMemery.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D75DB50F4CCBA49F2A4723AC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0F626EB380B26A3759E07983 /* libPods-HailyCloudMemery.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,12 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2304113A1CF3012D003CE754 /* Build configuration list for PBXNativeTarget "HailyCloudMemery" */;
 			buildPhases = (
-				BEC3DA20AA4D117EFA483014 /* Check Pods Manifest.lock */,
+				331A83FCFE599E10EFB96D06 /* 📦 Check Pods Manifest.lock */,
 				230411091CF3012D003CE754 /* Sources */,
 				2304110A1CF3012D003CE754 /* Frameworks */,
 				2304110B1CF3012D003CE754 /* Resources */,
-				7BEA64007D661A1AC9DCDB2C /* Embed Pods Frameworks */,
-				CE4F748216DCEDAD56425494 /* Copy Pods Resources */,
+				46E02BD874E51F69B062E3EE /* 📦 Embed Pods Frameworks */,
+				4CE66EC630C22F42F45437B9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,6 +247,7 @@
 				TargetAttributes = {
 					2304110C1CF3012D003CE754 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RZ9A8H5PQ3;
 					};
 					230411251CF3012D003CE754 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -307,29 +308,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7BEA64007D661A1AC9DCDB2C /* Embed Pods Frameworks */ = {
+		331A83FCFE599E10EFB96D06 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEC3DA20AA4D117EFA483014 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +323,29 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CE4F748216DCEDAD56425494 /* Copy Pods Resources */ = {
+		46E02BD874E51F69B062E3EE /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HailyCloudMemery/Pods-HailyCloudMemery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CE66EC630C22F42F45437B9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,25 +505,31 @@
 		};
 		2304113B1CF3012D003CE754 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C47CA1AED9F312D5681B5CC /* Pods-HailyCloudMemery.debug.xcconfig */;
+			baseConfigurationReference = 8ED85ED86020D1D71ED99F20 /* Pods-HailyCloudMemery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HailyCloudMemery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		2304113C1CF3012D003CE754 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6B68459A2FCBC4F7710467F /* Pods-HailyCloudMemery.release.xcconfig */;
+			baseConfigurationReference = F4EA5EED59B14086E1EE9689 /* Pods-HailyCloudMemery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HailyCloudMemery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

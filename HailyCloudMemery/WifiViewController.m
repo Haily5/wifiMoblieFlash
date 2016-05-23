@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.uploader start];
+    [self.uploader startWithPort:8090 bonjourName:@"http://wifiMobileFlash.com"];
     self.title = @"wifi 传输";
     NSURL *url = self.uploader.serverURL;
     self.msgLabel.text = [NSString stringWithFormat:@"请在同一wifi下输入: %@",url];
@@ -39,7 +39,8 @@
 
 - (void)dealloc
 {
-    [self.uploader stop];
+    if (self.uploader.running)
+        [self.uploader stop];
     [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
 }
 
