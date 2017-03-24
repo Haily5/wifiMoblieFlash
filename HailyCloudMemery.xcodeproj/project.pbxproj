@@ -247,7 +247,7 @@
 				TargetAttributes = {
 					2304110C1CF3012D003CE754 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = RZ9A8H5PQ3;
+						DevelopmentTeam = JUU7AHEVWB;
 					};
 					230411251CF3012D003CE754 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -510,9 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JUU7AHEVWB;
 				INFOPLIST_FILE = HailyCloudMemery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.HailyCloudMemery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -525,9 +526,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JUU7AHEVWB;
 				INFOPLIST_FILE = HailyCloudMemery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.haily.test.HailyCloudMemery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.HailyCloudMemery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
